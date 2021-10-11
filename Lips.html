@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>메이크업 포에버 공식 웹사이트</title>
+    <link rel="shortcut icon" href="images/pavicon.jpeg">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/slick.min.js"></script>
+  </head>
+  <body>
+	  <!-- 헤더 영역 시작 -->
+	<header class="header">
+		<div class="info">
+			<span><a href="#">고객문의</a></span>
+			<span><a href="#">매장문의</a></span>
+			<span class="login" onclick="loginModal()"><a href="#">로그인</a></span>
+			<span><a href="#">회원가입</a></span>
+		</div>
+		<div id="log_page">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="bg">
+			 <div class="layer">
+				 <div class="layerbox"></div>
+			 </div>
+		 </div>
+		 <div class="content">
+			 <div class="text">
+	   LOGIN</div>
+	   <form action="#">
+			   <div class="field">
+				 <input type="text" required>
+				 <span class="fas fa-user"></span>
+				 <label>이메일 or 핸드폰번호</label>
+			   </div>
+	   <div class="field">
+				 <input type="password" required>
+				 <span class="fas fa-lock"></span>
+				 <label>Password</label>
+			   </div>
+	   <div class="forgot-pass">
+	   <a href="#">아이디 혹은 비밀번호를 잊으셨습니까?</a></div>
+	   <button class="login_btn">LOGIN</button>
+				<div class="sign-up">
+	   회원이 아니신가요?
+				 <a href="#">Signup Now</a>
+			   </div>
+	   </form>
+	   </div>
+			<div class="social_log">
+				<h3>SNS 계정으로도 이용해보세요!</h3>
+				<div><img src="images/google copy.png" alt=""><span>Google</span>로 계속</div>
+				<div><img src="images/kakao copy.png" alt=""><span>kaKao</span>로 계속</div>
+				<div><img src="images/instagram copy.png" alt=""><span>Instagram</span>으로 계속</div>
+				<div><img src="images/facebook copy.png" alt=""><span>Facebook</span>으로 계속</div>
+				<div><img src="images/twiter copy.png" alt=""><span>Twiter</span>로 계속</div>
+			 </div>
+			<div class="nonmember">
+			 <ul class="discount_container">
+			 <li>
+			 <p>아직 Makeupforever의 회원이 아니신가요?<br>회원으로 가입하시면 10% 할인쿠폰을 드립니다</p>
+			 <a href="#" class="disc_btn">가입하기</a>
+		 </li>
+			 <li>
+			 <p>비회원 주문/배송 조회가 필요하신가요?</p>
+			 <a href="#" class="disc_btn">비회원 주문조회</a>
+		 </ul>
+			</div>
+		</div> 
+		<div class="logo">
+		<a href="index.html"><img src="images/headerlogo.jpeg" alt="로고"></a>
+		</div>
+		<div class="header_menu">
+		<div class="dropdown">
+		<a href="face.html" class="dropbtn">FACE</a>
+		<div class="dropdown-content">
+			<div class="row">
+				<div class="column">
+					<a href="#">파운데이션</a>
+					<a href="#">프라이머</a>
+					<a href="#">블러셔</a>
+					<a href="#">컨실러</a>
+					<a href="#">루미나이저</a>
+					<a href="#">파우더</a>
+					<a href="#">실러</a>
+				</div>
+				<div class="menu_image_box">
+					<div class="menu_image">
+						<img src="images/categorytop_teint.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+				<div class="dropdown">
+					<a href="eyes.html" class="dropbtn">EYES</a>
+					<div class="dropdown-content">
+						<div class="row">
+							<div class="column">
+								<a href="#">아이라이너&amp;펜슬 </a>
+								<a href="#">아이섀도우</a>
+								<a href="#">아이브로우</a>
+								<a href="#">마스카라</a>
+								<a href="#">프라이머&nbsp;실러</a>
+							</div>
+							<div class="menu_image_box">
+								<div class="menu_image">
+									<img src="images/categorytop_yeux (1).jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="dropdown">
+					<a href="Lips.html" class="dropbtn">LIPS</a>
+					<div class="dropdown-content">
+						<div class="row">
+							<div class="column">
+								<a href="#">립케어</a>
+								<a href="#">립 라이너</a>
+								<a href="#">립스틱</a>
+							</div>
+							<div class="menu_image_box">
+								<div class="menu_image">
+									<img src="images/categorytop_levres (1).jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<div class="dropdown">
+				<a href="#" class="dropbtn">BEST SELLERS</a>
+			</div>
+						<div class="dropdown">
+							<a href="#" class="dropbtn">MORE</a>
+							<div class="dropdown-content">
+								<div class="row">
+									<div class="column">
+										<a href="#">공지사항</a>
+										<a href="#">문의하기</a>
+										<a href="#">이벤트</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="search">
+							<span class="fas fa-search">&nbsp; 검색</span>
+						</div>
+					</div>
+			</header>
+<!--헤더 영역 끝-->
+
+<!-- lips container 영역 시작 -->
+<selection id="container_wrap">
+    <div id="search_container">
+		<div class="search_banner">
+			<div class="search_info">
+				<span><a href="index.html">HOME</a></span>
+				<span>LIPS</span>
+			</div>
+		<div class="search_title">
+			<span>LIPS</span>
+			<span>12</span>
+			<span>검색한 제품</span>
+		</div>	
+		</div>
+    </div>	
+		<div class="select_container">
+			<div class="select_box">
+			<label for="PLP-sorting-options">Sort By :</label>
+			<select name="select_option" id="select_option" class="custom_select">
+				<option class="best_matches" value="" data-id="best_matches" >BEST MATCHES</option>
+				<option class="price_high" value="" data-id="price_high" >높은 가격순</option>
+				<option class="price_row" value="" data-id="price_row" >낮은 가격순</option>
+				<option class="product_name_a" value="" data-id="product_name_a">A-Z 상품명순</option>
+				<option class="product_name_z" value="" data-id="product_name_z">Z-A 상품명순</option>
+				<option class="best_seller" value="" data-id="best_seller" >판매량순</option>
+			</select>
+		</div>
+	</div>
+	<button type="button" id="myBtn" class="button_option" data-toggle="modal" data-micromodal-trigger="filter_modal">FILTER</button>
+	
+		<div id="product_container">
+			<ul class="product-ul">
+			<li class="product-li on">
+				<div class="badge">신제품</div>
+			  <a href="#"><img src="images/lip1.png" alt="">
+			  <div class="face_textbox">
+				<h2 class="product_title-1">루즈 아티스트 ROUGE ARTIST<br>
+				<span class="product_title-2">INTENSE COLOR- BLUR FINISH - HIGH PRECISION LIPSTICK</span></h2>
+				  <div class="small_font">Lipstick, Glossy Finish, Long Lasting</div>
+				  <div class="color_part">
+					<div class="color_swatch">(60 색상)</div>
+				</div>
+				<div class="price_font"><span class="value">₩34,000</span></div>
+				<div class="view_button"><span class="view_elements">제품보기</span></div>
+			</div>
+			</a>
+		  </li>	
+			<li class="product-li on">
+				<div class="badge">BEST SELLER</div>
+			  <a href="#"><img src="images/lip2.png" alt="">
+			  <div class="face_textbox">
+			  <h2 class="product_title-1">아티스트 립 블러쉬<br>
+				<span class="product_title-2">Matte Lipstick</span></h2>
+				  <div class="small_font">Matte Finish, Long Lasting</div>
+				  <div class="color_part">
+					<div class="color_swatch">(10 색상)</div>
+				</div>
+				<div class="price_font"><span class="value">₩34,000</span></div>
+				<div class="view_button"><span class="view_elements">제품보기</span></div>
+			</div>
+			 </a>
+			</li>
+		  <li class="product-li on">
+			<div class="badge">BEST SELLER</div>
+			  <a href="#"><img src="images/lip3.png" alt="">
+			  <div class="face_textbox">
+			  <h2 class="product_title-1">아티스트 루즈 매트<br>
+			<span class="product_title-2">Matte High Pigmented Lipstick</span></h2>
+				<div class="small_font">Lipstick, Matte Finish, Long Lasting</div>
+				<div class="color_part">
+					<div class="color_swatch">(19 색상)</div>
+				</div>
+				<div class="price_font"><span class="value">₩34,000</span></div>
+				<div class="view_button"><span class="view_elements">제품보기</span></div>
+		  </div>
+			</a>
+		  </li>
+		  <li class="product-li on">
+			<div class="badge">BEST SELLER</div>
+			  <a href="#"><img src="images/lip4.png" alt="">
+			  <div class="face_textbox">
+				<h2 class="product_title-1">아티스트 루즈 크림<br>
+				<span class="product_title-2">Creamy High Pigmented Lipstick</span></h2>
+				<div class="small_font">Lipstick, Glossy Finish, Long Lasting</div>
+				<div class="color_part">
+					<div class="color_swatch">(29 색상)</div>
+				</div>
+				<div class="price_font"><span class="value">₩34,000</span></div>
+				<div class="view_button"><span class="view_elements">제품보기</span></div>
+		  </div>
+			 </a>
+			</li>
+		  <li class="product-li on">
+			<div class="badge">BEST SELLER</div>
+			  <a href="#"><img src="images/lip5.png" alt="">
+			  <div class="face_textbox">
+				<h2 class="product_title-1">아티스트 루즈 라이트<br>
+				<span class="product_title-2">Luminous Hydrating Lipstick</span></h2>
+				<div class="small_font">Lipstick, Sheer Finish</div>
+				<div class="color_part">
+					<div class="color_swatch">(25 색상)</div>
+				</div>
+				<div class="price_font"><span class="value">₩25,000</span></div>
+				<div class="view_button"><span class="view_elements">제품보기</span></div>
+		  </div>
+			 </a>
+		  </li>
+		  <li class="product-li on">
+			<div class="badge">BEST SELLER</div>
+			  <a href="#"><img src="images/lip6.png" alt="">
+			  <div class="face_textbox">
+				<h2 class="product_title-1">아티스트 리퀴드 매트<br>
+				<span class="product_title-2">Liquid Lip Color</h2>	
+			  <div class="small_font">Waterproof, Liquid Lipstick, Matte Finish, Without Transfert, Long Lasting</div> 
+			  <div class="color_part">
+				<div class="color_swatch">(8 색상)</div>
+			</div>
+			<div class="price_font"><span class="value">₩34,000</span></div>
+				<div class="view_button"><span class="view_elements">제품보기</span></div>
+		  </div>
+			 </a>
+			</li>
+		  <li class="product-li on">
+			<div class="badge_blank">&nbsp;</div>
+			  <a href="#"><img src="images/lip7.png" alt="">
+			  <div class="face_textbox">
+				<h2 class="product_title-1">아쿠아 립<br>
+				<span class="product_title-2">Waterproof Lip Liner Pencil</span></h2>	
+			  <div class="small_font">Waterproof, Matte Finish, Without Transfert, Long Lasting</div>
+			  <div class="color_part">
+				<div class="color_swatch"></div>
+			</div> 
+			<div class="price_font"><span class="value">₩25,000</span></div>
+			<div class="view_button"><span class="view_elements">제품보기</span></div>
+			  </div>
+			 </a>
+			</li>
+		  <li class="product-li on">
+			<div class="badge_blank">&nbsp;</div>
+			  <a href="#"><img src="images/lip8.png" alt="">
+			  <div class="face_textbox">
+				<h2 class="product_title-1">아티스트 하이드라블룸<br>
+				<span class="product_title-2">Moisturizing Lip Balm Stick</h2>
+			  <div class="small_font">Lip Balm, Sheer Finish</div>
+			  <div class="color_part">
+				<div class="color_swatch">(8 색상)</div>
+			</div> 	
+			<div class="price_font"><span class="value">₩34,000</span></div>
+			<div class="view_button"><span class="view_elements">제품보기</span></div>
+			  </div>
+			  </a>
+			</li>
+		  <li class="product-li on">
+			<div class="badge">BEST SELLER</div>
+			<a href="#"><img src="images/lip9.png" alt="">
+				<div class="face_textbox">
+				  <h2 class="product_title-1">UHD 립 부스터<br>
+				<span class="product_title-2">Hydra-Plump Serum</span></h2>
+				<div class="small_font">Lip Balm</div>
+				<div class="color_part">
+					<div class="color_swatch">(8 색상)</div>
+				</div> 
+				<div class="price_font"><span class="value">₩37,000</span></div>
+			<div class="view_button"><span class="view_elements">제품보기</span></div>
+				</div>
+				</a>
+			</li>
+		  <li class="product-li on">
+			<div class="badge">BEST SELLER</div>
+			<a href="#"><img src="images/eye19.png" alt="">
+				<div class="face_textbox">
+				  <h2 class="product_title-1">스텝원 스킨 이퀄라이저 아이 앤 립 프라이머<br>
+					<span class="product_title-2">Eyes & Lips Primer</span></h2>
+					<div class="small_font">Without Transfert, Long Lasting</div>
+					<div class="color_part">
+						<div class="color_swatch"></div>
+					</div> 
+				<div class="price_font"><span class="value">₩35,000</span></div>
+			<div class="view_button"><span class="view_elements">제품보기</span></div>
+				</div>
+			</a>
+		  </li>
+		  <li class="product-li on">
+			<div class="badge">NEW</div>
+			<a href="#"><img src="images/lip10.jpg" alt="">
+				<div class="face_textbox">
+				  <h2 class="product_title-1">아티스트 립 샷<br>
+				<span class="product_title-2">Long-Lasting Lacquer Stick</span></h2>
+				<div class="small_font">Lipstick, Long Lasting</div>
+				<div class="color_part">
+					<div class="color_swatch">(8 색상)</div>
+				</div> 
+				<div class="price_font"><span class="value">₩34,000</span></div>
+			<div class="view_button"><span class="view_elements">제품보기</span></div>
+				</div>
+				</a>
+		  </li>
+		  <li class="product-li on">
+			<div class="badge_blank">&nbsp;</div>
+			<a href="#"><img src="images/lip13.png" alt="">
+				<div class="face_textbox">
+				  <h2 class="product_title-1">루즈 아티스트 스파클 리미티드 에디션<br>
+				<span class="product_title-2">MULTI-DIMENSIONAL GLITTERY LIPSTICK</span></h2>
+				<div class="small_font"></div>
+				<div class="color_part">
+					<div class="color_swatch">(5색상)</div>
+				</div> 
+				<div class="price_font"><span class="value">₩34,000</span></div>
+				<div class="view_button"><span class="view_elements">제품보기</span></div>
+				</div>
+			</a>
+		</li>
+	</ul>
+	<div class="more_btn">
+		<a href="#" class="more">More View</a>
+		</div>
+  	</div>	
+	</selection> 
+	<!-- eyes container 영역 끝 -->
+
+	<!-- 하단 제품찾기 영역 시작 -->
+  <span class="sc_title">제품찾기</span>
+  <div class="contents">
+	<div class="product_search">
+		<a href="face.html"><img src="images/Face2.png" alt="">
+		<p>FACE</p></a>
+	</div>
+	<div class="product_search">
+		<a href="eyes.html"><img src="images/Eyes2.png" alt="">
+		<p>EYES</p></a>
+	</div>
+	<div class="product_search">
+		<a href="Lips.html"><img src="images/Lips2.png" alt="">
+		<p>LIPS</p></a>
+	</div>
+  </div>
+	<!-- 하단 제품찾기 영역 끝 -->
+
+	<!--콘텐츠 영역 시작  -->
+	<div class="container2">
+		<div class="discover">
+		 <a href="#"><img src="images/discover1.jpg" alt=""><p>브랜드</p></a>
+	 </div>
+	  	<div class="discover">
+		   <a href="#"><img src="images/discover2.jpg" alt=""><p>매장</p></a>
+	 </div>
+ </div>
+ <div class="top"><i class="fas fa-angle-up"></i></div>
+		<!--콘텐츠 영역 끝  -->
+
+	<!--푸터 영역 시작  -->
+	<footer class="footer">
+		<div class="footer_menu">
+        <ul>
+          <li><a href="#">매장 찾기</a></li>
+          <li><a href="#">고객 서비스</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">아카데미</a></li>
+          <li><a href="#">브랜드</a></li>
+		</ul>
+		<div class="footer_contact">	
+		<p><a href="#">Contact Us</a></p>
+		<p><a href="#">About Us</a></p>
+		</div>
+    </div>
+    <div class="footer_content">
+        <div class="footer_content_div1">
+            <h4 class="footer_title1">SUBSCRIBE TO OUR NEWSLETTER</h4>
+			<input class="email" type="text" value="email 주소를 남겨주세요"><button class="subscribe" type="submit">구독하기</button>
+		</div>
+        <div class="footer_content_div2">
+			<h4 class="footer_title2">FOLLOW US</h4>
+			<div class="icon_box">
+          <div class="icon-btn">
+            <button><a href="#"><img src="images/instalogo.png" alt="icon1"></a></button>
+            </div>
+          <div class="icon-btn">
+            <button><a href="#"><img src="images/facebooklogo2.png" alt="icon2"></a></button>
+            </div>
+          <div class="icon-btn">
+            <button><a href="#"><img src="images/youtubelogo.png" alt="icon3"></a></button>            
+          </div>
+		</div>
+	</div>
+	<div class="footer_content_div3">
+		<p class="personal">© 2019 MAKE UP FOR EVER ALL RIGHTS RESERVED / <a href="#">약관</a> / <a href="#">개인정보 정책</a></p>
+	</div>
+    </div>
+</footer> 
+<!--푸터 영역 끝  -->
+</body>
+<script>
+	function loginModal(){
+			document.getElementById('log_page').style.height = "100%";
+		}
+   function closeNav(){
+			document.getElementById('log_page').style.height = "0";
+		}
+</script>
+</html>
+
+
+

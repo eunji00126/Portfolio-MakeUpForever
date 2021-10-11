@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>메이크업 포에버 공식 웹사이트</title>
+    <link rel="shortcut icon" href="images/pavicon.jpeg">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/slick.min.js"></script>
+  </head>
+  <body>
+      <!--헤더 영역 시작-->
+	  <header class="header">
+		<div class="info">
+			<span><a href="#">고객문의</a></span>
+			<span><a href="#">매장문의</a></span>
+			<span class="login" onclick="loginModal()"><a href="#">로그인</a></span>
+			<span><a href="#">회원가입</a></span>
+		</div>
+		<div id="log_page">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="bg">
+			 <div class="layer">
+				 <div class="layerbox"></div>
+			 </div>
+		 </div>
+		 <div class="content">
+			 <div class="text">LOGIN</div>
+	   <form action="#">
+			   <div class="field">
+				 <input type="text" required>
+				 <span class="fas fa-user"></span>
+				 <label>이메일 or 핸드폰번호</label>
+			   </div>
+	   <div class="field">
+				 <input type="password" required>
+				 <span class="fas fa-lock"></span>
+				 <label>Password</label>
+			   </div>
+	   <div class="forgot-pass">
+	   <a href="#">아이디 혹은 비밀번호를 잊으셨습니까?</a></div>
+	   <button class="login_btn">LOGIN</button>
+				<div class="sign-up">
+	   회원이 아니신가요?
+				 <a href="#">Signup Now</a>
+			   </div>
+	   </form>
+	   </div>
+			<div class="social_log">
+				<h3>SNS 계정으로도 이용해보세요!</h3>
+				<div><img src="images/google copy.png" alt=""><span>Google</span>로 계속</div>
+				<div><img src="images/kakao copy.png" alt=""><span>kaKao</span>로 계속</div>
+				<div><img src="images/instagram copy.png" alt=""><span>Instagram</span>으로 계속</div>
+				<div><img src="images/facebook copy.png" alt=""><span>Facebook</span>으로 계속</div>
+				<div><img src="images/twiter copy.png" alt=""><span>Twiter</span>로 계속</div>
+			 </div>
+			<div class="nonmember">
+			 <ul class="discount_container">
+			 <li>
+			 <p>아직 Makeupforever의 회원이 아니신가요?<br>회원으로 가입하시면 10% 할인쿠폰을 드립니다</p>
+			 <a href="#" class="disc_btn">가입하기</a>
+		 </li>
+			 <li>
+			 <p>비회원 주문/배송 조회가 필요하신가요?</p>
+			 <a href="#" class="disc_btn">비회원 주문조회</a>
+		 </ul>
+	 </div>
+		 </div>
+		<div class="logo">
+		<a href="index.html"><img src="images/headerlogo.jpeg" alt="로고"></a>
+		</div>
+		<div class="header_menu">
+		<div class="dropdown">
+		<a href="face.html" class="dropbtn">FACE</a>
+		<div class="dropdown-content">
+			<div class="row">
+				<div class="column">
+					<a href="#">파운데이션</a>
+					<a href="#">프라이머</a>
+					<a href="#">블러셔</a>
+					<a href="#">컨실러</a>
+					<a href="#">루미나이저</a>
+					<a href="#">파우더</a>
+					<a href="#">실러</a>
+				</div>
+				<div class="menu_image_box">
+					<div class="menu_image">
+						<img src="images/categorytop_teint.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+				<div class="dropdown">
+					<a href="eyes.html" class="dropbtn">EYES</a>
+					<div class="dropdown-content">
+						<div class="row">
+							<div class="column">
+								<a href="#">아이라이너&amp;펜슬 </a>
+								<a href="#">아이섀도우</a>
+								<a href="#">아이브로우</a>
+								<a href="#">마스카라</a>
+								<a href="#">프라이머&nbsp;실러</a>
+							</div>
+							<div class="menu_image_box">
+								<div class="menu_image">
+									<img src="images/categorytop_yeux (1).jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<div class="dropdown">
+				<a href="Lips.html" class="dropbtn">LIPS</a>
+				<div class="dropdown-content">
+					<div class="row">
+						<div class="column">
+							<a href="#">립케어</a>
+							<a href="#">립 라이너</a>
+							<a href="#">립스틱</a>
+						</div>
+						<div class="menu_image_box">
+							<div class="menu_image">
+								<img src="images/categorytop_levres (1).jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="dropdown">
+				<a href="#" class="dropbtn">BEST SELLERS</a>
+				</div>
+						<div class="dropdown">
+							<a href="#" class="dropbtn">MORE</a>
+							<div class="dropdown-content">
+								<div class="row">
+									<div class="column">
+										<a href="#">공지사항</a>
+										<a href="#">문의하기</a>
+										<a href="#">이벤트</a>
+									
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="search">
+							<span class="fas fa-search">&nbsp; 검색</span>
+						</div>
+					</div>
+	  </header>
+<!--헤더 영역 끝-->
+
+<!--face container 영역 시작  -->
+<selection id="container_wrap">
+    <div id="search_container">
+		<div class="search_banner">
+			<div class="search_info">
+				<span><a href="index.html" style="text-decoration:none">HOME</a></span>
+				<span>FACE</span>
+			</div>
+		<div class="search_title">
+			<span>FACE</span>
+			<span>27</span>
+			<span>검색한 제품</span>
+		</div>		
+		</div>
+	</div>
+		<div class="select_container">
+			<div class="select_box">
+			<label for="PLP-sorting-options">Sort By :</label>
+			<select name="select_option" id="select_option" class="custom_select">
+				<option class="best_matches" value="" data-id="best_matches" >BEST MATCHES</option>
+				<option class="price_high" value="" data-id="price_high" >높은 가격순</option>
+				<option class="price_row" value="" data-id="price_row" >낮은 가격순</option>
+				<option class="product_name_a" value="" data-id="product_name_a" >A-Z 상품명순</option>
+				<option class="product_name_z" value="" data-id="product_name_z" >Z-A 상품명순</option>
+				<option class="best_seller" value="" data-id="best_seller" >판매량순</option>
+			</select>
+		</div>
+	</div>
+	 <button type="button" id="myBtn" class="button_option" data-toggle="modal" data-micromodal-trigger="filter_modal">FILTER</button>
+<!-- 모달 화면 영역 시작-->
+<div class="modal" id="modal">
+<div class="modal-content">
+    <div class="modal-header">
+        <span class="close" id="close">&times;</span>
+        <h3>FILTER BY</h3>
+    </div>
+    <div class="modal_body1">
+        <h3>피부타입별</h3>
+        <div class="filter_modal1">
+        <label for="dry"><input type="checkbox" name="dry" id="dry" value="dry">건성</label>
+        <label for="oily"><input type="checkbox" name="oily" id="oily" value="oily">지성</label>
+        <label for="combination"><input type="checkbox" name="combination" id="combination" value="combination">복합성</label>
+        <label for="trouble"><input type="checkbox" name="trouble" id="trouble" value="trouble">트러블성</label>
+        <label for="malleable"><input type="checkbox" name="malleable" id="malleable" value="malleable">악건성/아토피</label>
+        <label for="innerdry"><input type="checkbox" name="innerdry" id="innerdry" value="innerdry">속건조</label>
+    </div>
+</div>
+    <div class="modal-body2">
+    <h3>피부고민별</h3>
+    <div class="filter_modal2">
+    <label for="ac"><input type="checkbox" name="ac" id="ac" value="ac">AC스팟</label>
+        <label for="pore"><input type="checkbox" name="pore" id="pore" value="pore">모공관리</label>
+        <label for="deadskin"><input type="checkbox" name="deadskin" id="deadskin" value="deadskin">각질관리</label>
+        <label for="white"><input type="checkbox" name="white" id="white" value="white">미백</label>
+        <label for="uv"><input type="checkbox" name="uv" id="uv" value="uv">자외선차단</label>
+        <label for="red"><input type="checkbox" name="red" id="red" value="red">붉은톤/홍조</label>
+        <label for="wrinkle"><input type="checkbox" name="wrinkle" id="wrinkle" value="wrinkle">주름개선/탄력</label>
+        <label for="blackhead"><input type="checkbox" name="blackhead" id="blackhead" value="blackhead">블랙헤드관리</label>
+    </div>
+    </div>
+    <label class="switch">Ultra HD
+        <input type="checkbox">
+        <span class="slider_round"></span>
+    </label>
+    <br>
+    <br>
+    <label class="switch">Waterproof
+        <input type="checkbox">
+        <span class="slider_round"></span>
+    </label>
+    <div class="modal-footer">
+    <button type="button" class="apply">SHOW RESULTS</button>
+    </div>
+            </div>
+        </div>
+	<!-- 모달 화면 영역 끝 -->
+
+	<!-- 페이스 제품 영역 시작 -->
+		<div id="product_container">
+			<ul class="product-ul">
+			<li class="product-li on">
+				<div class="badge">신제품</div>
+			  <a href="#"><img src="images/REBOOT-2019-30ML_Y245_Face_0 (1).jpg" alt="">
+			  <div class="face_textbox">
+				  <h2 class="product_title-1">리부트 파운데이션<br>
+				  <span class="product_title-2">Active Care Revitalizing Foundation</span></h2>
+				  <div class="small_font">Radiant Finish, Liquid,Buildable Coverage,Dry Skin,long-lasting</div>
+				  <div class="color_part">
+					  <div class="color_swatch">(14 색상)</div>
+				  </div>
+				  <div class="price_font"><span class="value">₩60,000</span></div>
+			 	<div class="view_button"><span class="view_elements">제품보기</span></div>
+		  </div>
+		  </a>	
+		</li>
+			<li class="product-li on">
+				<div class="badge">BEST SELLER</div>
+			  <a href="#"><img src="images/fdt_ultrahd_y365_Face_0.png" alt="">
+			  <div class="face_textbox">
+			  <h2 class="product_title-1">UHD 파운데이션<br>
+				<span class="product_title-2">Invisible Cover Foundation</span></h2>
+				<div class="small_font"></div> 
+				  <div class="color_part">
+					<div class="color_swatch">(14 색상)</div>
+					</div>
+				  <div class="price_font"><span class="value">₩60,000</span></div>
+				  <div class="view_button"><span class="view_elements">제품보기</span></div>
+			</div>
+			  </a>
+			</li>
+		  <li class="product-li on">
+			<div class="badge">BEST SELLER</div>
+			  <a href="#"><img src="images/packshot_closed_ultrahdconcealer_32_Face_0.png" alt="">
+			  <div class="face_textbox">
+			  <h2 class="product_title-1">UHD 컨실러<br>
+				<span class="product_title-2">Light Capturing Self-Setting Concealer</span></h2>
+				  <div class="small_font">Ultra HD, radiant Finish, Fluid, Buildable Coverage</div>
+				  <div class="color_part">
+					<div class="color_swatch">(5 색상)</div>
+				</div> 
+				  <div class="price_font"><span class="value">₩40,000</span></div>
+				  <div class="view_button"><span class="view_elements">제품보기</span></div>
+		  </div>
+		</a>
+	</li>
+		  <li class="product-li on">
+			<div class="badge">BEST SELLER</div>
+			  <a href="#"><img src="images/mattevelvetskincompact_open_r330_0_Face_0.jpg" alt="">
+			  <div class="face_textbox">
+				<h2 class="product_title-1">매트 벨벳 스킨 블러링 파우더 파운데이션<br>
+				<span class="product_title-2">Blurring Powder Foundation</span></h2>
+				<div class="small_font">Waterproof, Matte Finish, Cream, Full Coverage, Combination Skin</div>
+				<div class="color_part">
+				<div class="color_swatch">(6 색상)</div>
+				</div>
+				<div class="price_font"><span class="value">₩30,000</span></div>
+				<div class="view_button"><span class="view_elements">제품보기</span></div>
+		  </div>
+			 </a>
+		  </li>
+		<li class="product-li on">
+			<div class="badge">BEST SELLER</div>
+			  <a href="#"><img src="images/UHD-Pressed-Powder-01_Face_0.png" alt="">
+			  <div class="face_textbox">
+				<h2 class="product_title-1">UHD 프레스드 파우더<br>
+				<span class="product_title-2">Microfinish Pressed Powder</span></h2>
+				<div class="small_font">Ultra HD, Natural Finish, Radiant Finish, Pressed Powder, Buildable Coverage</div>
+				<div class="color_part">
+				<div class="color_swatch">(1 색상)</div>
+				</div>
+				<div class="price_font"><span class="value">₩54,000</span></div>
+				<div class="view_button"><span class="view_elements">제품보기</span></div>
+			</div>
+		 </a>
+		 
+		</li>
+		  <li class="product-li on">
+			<div class="badge">BEST SELLER</div>
+			  <a href="#"><img src="images/ultrahdloosepowder_Face_0.png" alt="">
+			  <div class="face_textbox">
+				<h2 class="product_title-1">ULTRA HD 파우더<br>
+				<span class="product_title-2">Microfinishing Loose Powder</span></h2>	
+			  <div class="small_font">Ultra HD,Radiant Finish, Loose Powder,Sheer Coverage, All Skins</div>
+			  <div class="color_part">
+				<div class="color_swatch">(8 색상)</div>
+				</div>
+			  <div class="price_font"><span class="value">₩54,000</span></div>
+			  <div class="view_button"><span class="view_elements">제품보기</span></div>
+			  </div>
+		 </a>
+		  </li>
+		  <li class="product-li on">
+			<div class="badge_blank">&nbsp;</div>
+			  <a href="#"><img src="images/step1basecorrectricederougeurs_Face_0.png" alt="">
+			  <div class="face_textbox">
+				<h2 class="product_title-1">STEP 1 SKIN EQUALIZER<br>
+				<span class="product_title-2"></span></h2>
+			  <div class="small_font"></div>
+			  <div class="color_part">
+				<div class="color_swatch"></div>
+				</div>
+				<div class="price_font"><span class="value">₩52,000</span></div>
+				<div class="view_button"><span class="view_elements">제품보기</span></div>
+			  </div>
+			  </a>
+		  </li>
+		  <li class="product-li on">
+			<div class="badge_blank">&nbsp;</div>
+			  <a href="#"><img src="images/Pro_Light_Fusion_Luminizer_Golden_Pink_Face_0.png" alt="">
+			  <div class="face_textbox">
+				<h2 class="product_title-1">프로 라이트 퓨전<br>
+				<span class="product_title-2">Highlighter</span></h2>
+			  <div class="small_font">Iridescent Finish, Pressed Powder,Sheer Coverage</div>
+			  <div class="color_part">
+				<div class="color_swatch">(2 색상)</div>
+				</div>
+				<div class="price_font"><span class="value">₩55,000</span></div>
+				<div class="view_button"><span class="view_elements">제품보기</span></div>
+			  </div>
+			</a>
+		</li>
+		  <li class="product-li on">
+		 
+			<div class="badge_blank">&nbsp;</div>
+			<a href="#"><img src="images/Full-Cover-Ivoire_Face_0.png" alt="">
+				<div class="face_textbox">
+				  <h2 class="product_title-1">풀 커버<br>
+				  <span class="product_title-2">Extreme Camouflage Cream</span></h2>
+				<div class="small_font">Waterproof, Matte Finish Cream,Full Coverage,All Skins</div>
+				<div class="color_part">
+				<div class="color_swatch">(3 색상)</div>
+				</div>
+				<div class="price_font"><span class="value">₩42,000</span></div>
+				<div class="view_button"><span class="view_elements">제품보기</span></div>
+				</div>
+				</a>
+		 
+		  </li>
+		  <li class="product-li on">
+			<div class="badge_blank">&nbsp;</div>
+			<a href="#"><img src="images/step1basematifiante_Face_0.png" alt="">
+				<div class="face_textbox">
+				  <h2 class="product_title-1">STEP 1 SKIN EQUALIZER<br>
+				 <span class="product_title-2">Matifying Primer</span></h2>
+				 <div class="small_font"></div>
+				 <div class="color_part">
+					<div class="color_swatch"></div>
+				</div>
+				<div class="price_font"><span class="value">₩52,000</span></div>
+				<div class="view_button"><span class="view_elements">제품보기</span></div>
+				</div>
+				</a>
+			</li>
+		  <li class="product-li on">
+			<div class="badge">BEST SELLER</div>
+			<a href="#"><img src="images/ultrahdsoftlightpinkchampagne_Face_0.png" alt="">
+				<div class="face_textbox">
+				  <h2 class="product_title-1">UHD 소프트 라이트<br>
+				<span class="product_title-2">Liquid Hightlighter></span></h2>
+				<div class="small_font">waterproof, Ultra HD, Iridescent Finish Cream, Sheer Coverage</div>
+				<div class="color_part">
+					<div class="color_swatch">(3 색상)</div>
+				</div>
+				<div class="price_font"><span class="value">₩49,000</span></div>
+				<div class="view_button"><span class="view_elements">제품보기</span></div>
+				</div>
+				</a>
+		  </li>
+		  <li class="product-li on">
+			<div class="badge">BEST SELLER</div>
+			<a href="#"><img src="images/packshot_mist_fix2019_open21_Face_0.png" alt="">
+				<div class="face_textbox">
+				  <h2 class="product_title-1">미스트 앤 픽스<br>
+				  <span class="product_title-2">Make-Up Setting Spray</span></h2>
+				<div class="small_font">Travel Size, All Skins, Long Lasting</div>
+				<div class="color_part">
+					<div class="color_swatch"></div>
+				</div>
+				<div class="price_font"><span class="value">₩39,000</span></div>
+				<div class="view_button"><span class="view_elements">제품보기</span></div>
+				</div>
+				</a>
+			</li>
+		<li class="product-li on">
+				<div class="badge_blank">&nbsp;</div>
+			  <a href="#"><img src="images/uvprimespf30pa_Face_0.png" alt="">
+				  <div class="face_textbox">
+					<h2 class="product_title-1">UV 프라임 SPF 30 / PA+++<br>
+					<span class="product_title-2">Daily Protective Make-Up Primer</span></h2>
+				  <div class="small_font">Radiant Finish, Cream</div>
+				  <div class="color_part">
+					<div class="color_swatch"></div>
+				</div>
+				<div class="price_font"><span class="value">₩52,000</span></div>
+				<div class="view_button"><span class="view_elements">제품보기</span></div>
+			</div>
+			  </a>
+				</li>
+		<li class="product-li on">
+			<div class="badge_blank">&nbsp;</div>
+			<a href="#"><img src="images/MIST-AND-FIX-SPARKLE_Face_0.png" alt="">
+				<div class="face_textbox">
+					<h2 class="product_title-1">미스트 앤 픽스<br>
+					<span class="product_title-2">Sparkling Limited Edition</span></h2>
+					<div class="small_font"></div>
+					<div class="color_part">
+					<div class="color_swatch"></div>
+				</div>	
+			<div class="price_font"><span class="value">₩39,000</span></div>
+			<div class="view_button"><span class="view_elements">제품보기</span></div>
+				</div>
+				</a>
+			</li>
+			<li class="product-li on">
+			<div class="badge_blank">&nbsp;</div>
+			<a href="#"><img src="images/step1basenourissante_Face_0.png" alt="">
+				<div class="face_textbox">
+					<h2 class="product_title-1">STEP 1 SKIN EQUALIZER<br>
+					<span class="product_title-2">Nourishing Primer</span></h2>
+					<div class="small_font"></div>
+					<div class="color_part">
+					<div class="color_swatch"></div>
+				</div>
+				<div class="price_font"><span class="value">₩52,000</span></div>
+			<div class="view_button"><span class="view_elements">제품보기</span></div>
+				</div>
+					</a>
+			</li>
+		<li class="product-li on">
+		<div class="badge">BEST SELLER</div>
+		<a href="#"><img src="images/waterblend_y245_Face_0.png" alt="">
+			<div class="face_textbox">
+				<h2 class="product_title-1">워터블랜드<br>
+				<span class="product_title-2">Face And Body Foundation</span></h2>
+				<div class="small_font">waterproof,Natural Finish,Liquid,Buildable Coverage,Combination Skin</div>
+				<div class="color_part">
+				<div class="color_swatch"></div>
+			</div>
+				<div class="price_font"><span class="value">₩39,000</span></div>
+				<div class="view_button"><span class="view_elements">제품보기</span></div>
+			</div>
+				</a>
+			</li>
+			  <li class="product-li on">
+					<div class="badge_blank">&nbsp;</div>
+				  <a href="#"><img src="images/step1baselissante_Face_0.png" alt="">
+					  <div class="face_textbox">
+						<h2 class="product_title-1">STEP 1 SKIN EQUALIZER<br>
+						<span class="product_title-2">Smoothing Primer</span></h2>
+					  <div class="small_font">Without Transfert, Long Lasting</div>
+					  <div class="color_part">
+						<div class="color_swatch"></div>
+					</div>	
+					<div class="price_font"><span class="value">₩52,000</span></div>
+					<div class="view_button"><span class="view_elements">제품보기</span></div>
+					  </div>
+					  </a>
+			  		</li>
+			<li class="product-li on">
+				<div class="badge">BEST SELLER</div>
+				<a href="#"><img src="images/step1baselissante_Face_0.png" alt="">
+					<div class="face_textbox">
+						<h2 class="product_title-1">프로 피니쉬<br>
+						<span class="product_title-2">NATURAL MATTE POWDER</span></h2>
+					<div class="small_font"></div>
+					<div class="color_part">
+						<div class="color_swatch">(4 색상)</div>
+					</div>		
+					<div class="price_font"><span class="value">₩56,000</span></div>
+				<div class="view_button"><span class="view_elements">제품보기</span></div>
+					</div>
+						</a>
+				</li>
+				<li class="product-li on">
+				<div class="badge">BEST SELLER</div>
+				<a href="#"><img src="images/ultrahdskinbooster_Face_0.png" alt="">
+					<div class="face_textbox">
+						<h2 class="product_title-1">UHD 스킨 부스터<br>
+						<span class="product_title-2">HYDRA-PLUMP SERUM</span></h2>
+					<div class="small_font">Radiant Finish, Liquid, Dry Skin, All Skins</div>
+					<div class="color_part">
+						<div class="color_swatch"></div>
+					</div>	
+					<div class="price_font"><span class="value">₩52,000</span></div>
+				<div class="view_button"><span class="view_elements">제품보기</span></div>
+					</div>
+					</a>
+				</li>
+			<li class="product-li on">
+			<div class="badge_blank">&nbsp;</div>
+			<a href="#"><img src="images/uvprimespf50pa_Face_0.png" alt="">
+				<div class="face_textbox">
+					<h2 class="product_title-1">UV 프라임 SPF 50 / PA+++<br>
+					<span class="product_title-2">DAILY PROTECTIVE MAKE-UP PRIMER</span></h2>
+				<div class="small_font">Radiant Finish, Cream, SPF 50, Long Lasting</div>
+				<div class="color_part">
+					<div class="color_swatch"></div>
+				</div>		
+				<div class="price_font"><span class="value">₩54,000</span></div>
+			<div class="view_button"><span class="view_elements">제품보기</span></div>
+				</div>
+					</a>
+			</li>
+			<li class="product-li on">
+					<div class="badge_blank">&nbsp;</div>
+				<a href="#"><img src="images/Pro-Scultpting-Palette-10G-- 20_Face_0.jpg" alt="">
+					<div class="face_textbox">
+						<h2 class="product_title-1">프로 스컬프팅 팔레트<br>
+						<span class="product_title-2">4-IN-1 FACE COUNTOURING PALETTE</span></h2>
+					<div class="small_font">Radiant Finish, Cream, Sheer Coverage, All Skins, Long Lasting</div>
+					<div class="color_part">
+						<div class="color_swatch"></div>
+					</div>
+					<div class="price_font"><span class="value">₩65,000</span></div>
+				<div class="view_button"><span class="view_elements">제품보기</span></div>
+					</div>
+					</a>
+				</li>
+			<li class="product-li on">
+				<div class="badge">신제품</div>
+				<a href="#"><img src="images/BACKSTAGEBOX_packshot_light_velvet_air-2019_btg100ml_Face_closed.jpg" alt="">
+					<div class="face_textbox">
+						<h2 class="product_title-1">라이트 벨벳 에어 미스트<br>
+						<span class="product_title-2">SHINE-CONTROL REFRESHING SPRAY</span></h2>
+					<div class="small_font">Matte Finish, Radiant Finish, Combination Skin, Long Lasting</div>
+					<div class="color_part">
+						<div class="color_swatch"></div>
+					</div>
+					<div class="price_font"><span class="value">₩39,000</span></div>
+			<div class="view_button"><span class="view_elements">제품보기</span></div>
+					</div>
+					</a>
+				</li>
+			<li class="product-li on">
+				<div class="badge">BEST SELLER</div>
+				<a href="#"><img src="images/fonddeteintstickultrahdivoire_Face_0.png" alt="">
+					<div class="face_textbox">
+						<h2 class="product_title-1">UHD 스틱 파운데이션<br>
+						<span class="product_title-2">INVISIBLE COVER STICK FOUNDATION</span></h2>
+					<div class="small_font">Satin Finish, Cream, Buildable Coverage, Dry Skin, Long Lasting</div>
+					<div class="color_part">
+						<div class="color_swatch"></div>
+					</div>
+					<div class="price_font"><span class="value">₩60,000</span></div>
+					<div class="view_button"><span class="view_elements">제품보기</span></div>
+					</div>
+					</a>
+				</li>
+		<li class="product-li on">
+			<div class="badge_blank">&nbsp;</div>
+			<a href="#"><img src="images/UHD-Pressed-Powder-01_Face_0.png" alt="">
+				<div class="face_textbox">
+					<h2 class="product_title-1">UHD 프레스드 파우더<br>
+					<span class="product_title-2">SPARKLE LIMITED EDITION</span></h2>
+				<div class="small_font">Ultra HD, Natural Finish, Radiant Finish, Pressed powder, Buildable Coverage</div>
+				<div class="color_part">
+					<div class="color_swatch"></div>
+				</div>
+				<div class="price_font"><span class="value">₩54,000</span></div>
+				<div class="view_button"><span class="view_elements">제품보기</span></div>
+				</div>
+				</a>
+			</li>
+		<li class="product-li on">
+			<div class="badge">BEST SELLER</div>
+			<a href="#"><img src="images/step1eyelipequalizer_Face_0.png" alt="">
+				<div class="face_textbox">
+					<h2 class="product_title-1">스텝원 스킨 이퀄라이저 아이 앤 립 프라이머<br>
+					<span class="product_title-2">EYES & LIPS PRIMER</span></h2>
+				<div class="small_font">Without Transfert, Long Lasting</div>
+				<div class="color_part">
+					<div class="color_swatch"></div>
+				</div>
+				<div class="price_font"><span class="value">₩65,000</span></div>
+				<div class="view_button"><span class="view_elements">제품보기</span></div>
+				</div>
+				</a>
+		</li>
+		<li class="product-li on">
+			<div class="badge">BEST SELLER</div>
+			<a href="#"><img src="images/step1baseeclat_Face_0.png" alt="">
+				<div class="face_textbox">
+					<h2 class="product_title-1">스텝원 스킨 이퀄라이저<br>
+					<span class="product_title-2">RADIANT PRIMER</span></h2>
+				<div class="small_font"></div>
+				<div class="color_part">
+					<div class="color_swatch">(6 색상)</div>
+				</div>
+				<div class="price_font"><span class="value">₩52,000</span></div>
+			<div class="view_button"><span class="view_elements">제품보기</span></div>
+				</div>
+				</a>
+			</li>
+			<li class="product-li on">
+				<div class="badge">신제품</div>
+				<a href="#"><img src="images/REBOOT-LIMUNIZER_1_Face_0.png" alt="">
+					<div class="face_textbox">
+						<h2 class="product_title-1">리부트 루미나이저<br>
+						<span class="product_title-2">INSTANT ANTI-FATIGUE MAKEUP PEN</span></h2>
+					<div class="small_font">Natural Finish, Radiant Finish, Liquid, Buildable Coverage, All Skins, Long Lasting</div>
+					<div class="color_part">
+						<div class="color_swatch">(2 색상)</div>
+					</div>	
+					<div class="price_font"><span class="value">₩42,000</span></div>
+					<div class="view_button"><span class="view_elements">제품보기</span></div>
+					</div>
+					</a>
+				</li>
+				<li class="product-li on">
+					<div class="badge">신제품</div>
+					<a href="#"><img src="images/mattevelvetskincompact-pan-r210_Face_0.jpg" alt="">
+						<div class="face_textbox">
+							<h2 class="product_title-1">매트 벨벳 스킨 블러링 파우더 파운데이션 (리필)<br>
+							<span class="product_title-2">FOND DE TEINT MAT POUDRE</span></h2>
+						<div class="small_font">Matte Finish, Pressed powder, Buildable Coverage, Combination Skin, Long Lasting</div>
+						<div class="color_part">
+							<div class="color_swatch">(6 색상)</div>
+						</div>	
+						<div class="price_font"><span class="value">₩39,000</span></div>
+					<div class="view_button"><span class="view_elements">제품보기</span></div>
+						</div>
+						</a>
+			</li>
+		<li class="product-li on">
+			<div class="badge_blank">&nbsp;</div>
+			<a href="#"><img src="images/step1basehydratante_Face_0.png" alt="">
+				<div class="face_textbox">
+					<h2 class="product_title-1">STEP 1 SKIN EQUALIZER<br>
+					<span class="product_title-2">HYDRATING PRIMER</span></h2>
+					<p class="small_font"></p>
+					<div class="color_part">
+						<div class="color_swatch"></div>
+					</div>	
+					<div class="price_font"><span class="value">₩52,000</span></div>
+					<div class="view_button"><span class="view_elements">제품보기</span></div>
+				</div>
+				</a>
+			</li>
+		<li class="product-li on">
+			<div class="badge">BEST SELLER</div>
+			<a href="#"><img src="images/mattevelvetskincompact_open_r330_0_Face_0.jpg" alt="">
+				<div class="face_textbox">
+					<h2 class="product_title-1">아티스트 페이스 컬러<br>
+				<span class="product_title-2">FACE POWDERS (HIGHLIGHT, SCULPT AND BLUSH )</span></h2>
+				<div class="small_font">Radiant Finish, Loose powder, Buildable Coverage, Long Lasting</div>
+				<div class="color_part">
+					<div class="color_swatch"></div>
+				</div>		
+				<div class="price_font"><span class="value">₩29,000</span></div>
+				<div class="view_button"><span class="view_elements">제품보기</span></div>
+				</div>
+				</a>
+			</li>
+			<li class="product-li on">
+				<div class="badge">신제품</div>
+				<a href="#"><img src="images/UHD-LOOSE-POWDER-SPARKLE_Face_0.png" alt="">
+					<div class="face_textbox">
+						<h2 class="product_title-1">ULTRA HD 파우더<br>
+						<span class="product_title-2">SPARKLE LIMITED EDITION</span></h2>
+				<div class="small_font">Ultra HD, Radiant Finish, Loose powder, Sheer Coverage, All Skin</div>
+					<div class="color_part">
+						<div class="color_swatch"></div>
+					</div>
+					<div class="price_font"><span class="value">₩54,000</span></div>
+					<div class="view_button"><span class="view_elements">제품보기</span></div>
+					</div>
+					</a>
+				</li>
+				</ul>
+				<div class="more_btn">
+				<a href="#" class="more">More View</a>
+				</div>
+			</div>
+				</selection>
+		<!-- face container 영역 끝 -->
+
+		<!-- 하단 제품찾기 영역 시작 -->
+	    <span class="sc_title">제품찾기</span>
+	  <div class="contents">
+		<div class="product_search">
+			<a href="face.html"><img src="images/Face2.png" alt="">
+			<p>FACE</p></a>
+		</div>
+		<div class="product_search">
+			<a href="eyes.html"><img src="images/Eyes2.png" alt="">
+			<p>EYES</p></a>
+		</div>
+		<div class="product_search">
+			<a href="Lips.html"><img src="images/Lips2.png" alt="">
+			<p>LIPS</p></a>
+		</div>
+	  </div>
+	  <!-- 하단 제품찾기 영역 끝 -->
+
+<!--콘텐츠 영역 시작  -->
+<div class="container2">
+	<div class="discover">
+		 <a href="#"><img src="images/discover1.jpg" alt=""><p>브랜드</p></a>
+	 </div>
+	  <div class="discover">
+		   <a href="#"><img src="images/discover2.jpg" alt=""><p>매장</p></a>
+	 </div>
+ </div>
+ <div class="top"><i class="fas fa-angle-up"></i></div>
+ <!--콘텐츠 영역 끝  -->
+ 
+<!--푸터 영역 시작  -->
+<footer class="footer">
+    <div class="footer_menu">
+        <ul>
+          <li><a href="#">매장 찾기</a></li>
+          <li><a href="#">고객 서비스</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">아카데미</a></li>
+          <li><a href="#">브랜드</a></li>
+		</ul>
+		<div class="footer_contact">	
+		<p><a href="#">Contact Us</a></p>
+		<p><a href="#">About Us</a></p>
+		</div>
+    </div>
+    <div class="footer_content">
+        <div class="footer_content_div1">
+            <h4 class="footer_title1">SUBSCRIBE TO OUR NEWSLETTER</h4>
+			<input class="email" type="text" value="email 주소를 남겨주세요"><button class="subscribe" type="submit">구독하기</button>
+		</div>
+        <div class="footer_content_div2">
+			<h4 class="footer_title2">FOLLOW US</h4>
+			<div class="icon_box">
+          <div class="icon-btn">
+            <button><a href="#"><img src="images/instalogo.png" alt="icon1"></a></button>
+            </div>
+          <div class="icon-btn">
+            <button><a href="#"><img src="images/facebooklogo2.png" alt="icon2"></a></button>
+            </div>
+          <div class="icon-btn">
+            <button><a href="#"><img src="images/youtubelogo.png" alt="icon3"></a></button>            
+          </div>
+		</div>
+	</div>
+	<div class="footer_content_div3">
+		<p class="personal">© 2019 MAKE UP FOR EVER ALL RIGHTS RESERVED / <a href="#">약관</a> / <a href="#">개인정보 정책</a></p>
+	</div>
+    </div>
+</footer> 
+<!--푸터 영역 끝 -->
+<script>
+	function loginModal(){
+			document.getElementById('log_page').style.height = "100%";
+		}
+   function closeNav(){
+			document.getElementById('log_page').style.height = "0";
+		}
+</script>
+</body>
+</html>
