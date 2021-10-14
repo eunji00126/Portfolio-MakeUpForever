@@ -1,2 +1,2 @@
 # Portfolio-MakeUpForever
-Portfolio 
+DeskTop(PC) 전용입니다.
